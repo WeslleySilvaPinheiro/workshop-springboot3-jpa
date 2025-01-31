@@ -13,7 +13,7 @@ import jakarta.persistence.ManyToOne;
 @Embeddable //for many keys
 public class OrderItemPK implements Serializable{
 	private static final long serialVersionUID = 1L;
-	
+
 	// this class is for primary key for both classes "Order and Product";
 	@ManyToOne
 	@JoinColumn(name = "order_id")
